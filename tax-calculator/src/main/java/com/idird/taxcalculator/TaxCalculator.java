@@ -33,18 +33,18 @@ public class TaxCalculator
         System.out.println(invoice.toString());
 
         System.out.println("\n Output 2");
-        Product boiteChocolatImportee = new Product("BoÃ®te de chocolat importÃ©e", Product.Type.FOOD, 1, new BigDecimal("10.00"), true);
-        Product flaconDeParfum = new Product("Flacon de parfum importÃ©", Product.Type.OTHER, 1, new BigDecimal("47.50"), true);
+        Product boiteChocolatImportee = new Product("Boîte de chocolat importée", Product.Type.FOOD, 1, new BigDecimal("10.00"), true);
+        Product flaconDeParfum = new Product("Flacon de parfum importé", Product.Type.OTHER, 1, new BigDecimal("47.50"), true);
         p_products = asList(boiteChocolatImportee, flaconDeParfum);
         shoppingCart = new ShoppingCart(p_products);
         invoice = invoiceGenerator.getInvoice(shoppingCart);
         System.out.println(invoice.toString());
 
         System.out.println("\n Output 3");
-        Product flaconDeParfum2 = new Product("Flacon de parfum importÃ©", Product.Type.OTHER, 1, new BigDecimal("27.99"), true);
+        Product flaconDeParfum2 = new Product("Flacon de parfum importé", Product.Type.OTHER, 1, new BigDecimal("27.99"), true);
         Product flaconDeParfum3 = new Product("Flacon de parfum", Product.Type.OTHER, 1, new BigDecimal("18.99"), false);
-        Product boiteDePilulesContreLaMigraine = new Product("boÃ®te de pilules contre la migraine", Product.Type.MEDICAL,  1, new BigDecimal("9.75"), false);
-        Product boiteDeChocolatImportee = new Product("boÃ®te de chocolat importÃ©e", Product.Type.MEDICAL,  1, new BigDecimal("11.25"), true);
+        Product boiteDePilulesContreLaMigraine = new Product("boîte de pilules contre la migraine", Product.Type.MEDICAL,  1, new BigDecimal("9.75"), false);
+        Product boiteDeChocolatImportee = new Product("boîte de chocolat importée", Product.Type.MEDICAL,  1, new BigDecimal("11.25"), true);
         p_products = asList(flaconDeParfum2, flaconDeParfum3, boiteDePilulesContreLaMigraine, boiteDeChocolatImportee);
         shoppingCart = new ShoppingCart(p_products);
         invoice = invoiceGenerator.getInvoice(shoppingCart);
